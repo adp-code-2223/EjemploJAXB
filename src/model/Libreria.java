@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * @author maria
  */
-@XmlRootElement(namespace = "http://www.milibreria.com", name = "Bookshop")
+@XmlRootElement(namespace = "http://www.milibreria.com", name = "bookshop")
 @XmlAccessorType(XmlAccessType.PUBLIC_MEMBER)
 public class Libreria {
 
@@ -30,8 +30,8 @@ public class Libreria {
         return ListaLibro;
     }
 
-    @XmlElementWrapper(name = "ListaLibro")
-    @XmlElement(name = "Libro")
+    @XmlElementWrapper(name = "listaLibro")
+    @XmlElement(name = "libro")
     public void setListaLibro(ArrayList<Libro> ListaLibro) {
         this.ListaLibro = ListaLibro;
     }

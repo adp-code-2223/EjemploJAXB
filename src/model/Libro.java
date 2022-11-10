@@ -5,14 +5,15 @@
 package model;
 
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
  *
  * @author maria
  */
-
 @XmlType(propOrder = {"autor", "nombre", "editorial", "isbn"})
+
 public class Libro {
 
     private String nombre;
@@ -47,7 +48,8 @@ public class Libro {
     public void setEditorial(String editorial) {
         this.editorial = editorial;
     }
-@XmlAttribute
+
+    @XmlAttribute
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
